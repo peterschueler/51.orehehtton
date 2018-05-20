@@ -38,3 +38,5 @@ sysinfo.txt
 # git plugin
 
 /Assets/Plugins*
+
+*.blend1
