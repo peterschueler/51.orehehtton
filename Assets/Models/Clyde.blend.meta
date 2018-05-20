@@ -12,6 +12,24 @@ ModelImporter:
     100008: Eye_Left
     100010: Eye_Righ
     100012: Eye_Right
+    100014: Armature
+    100016: Bone
+    100018: Bone_001
+    100020: Bone_002
+    100022: Bone_003
+    100024: Bone_004
+    100026: Bone_005
+    100028: Bone_006
+    100030: Bone_007
+    100032: Bone_008
+    100034: Bone_009
+    100036: Bone_010
+    100038: Bone_011
+    100040: Bone_012
+    100042: Bone_013
+    100044: Bone_014
+    100046: Bone_015
+    100048: Mouth
     400000: //RootNode
     400002: Clyde
     400004: Icosphere
@@ -19,6 +37,24 @@ ModelImporter:
     400008: Eye_Left
     400010: Eye_Righ
     400012: Eye_Right
+    400014: Armature
+    400016: Bone
+    400018: Bone_001
+    400020: Bone_002
+    400022: Bone_003
+    400024: Bone_004
+    400026: Bone_005
+    400028: Bone_006
+    400030: Bone_007
+    400032: Bone_008
+    400034: Bone_009
+    400036: Bone_010
+    400038: Bone_011
+    400040: Bone_012
+    400042: Bone_013
+    400044: Bone_014
+    400046: Bone_015
+    400048: Mouth
     2300000: //RootNode
     2300002: Clyde
     2300004: Icosphere
@@ -26,6 +62,7 @@ ModelImporter:
     2300008: Eye_Left
     2300010: Eye_Righ
     2300012: Eye_Right
+    2300014: Mouth
     3300000: //RootNode
     3300002: Clyde
     3300004: Icosphere
@@ -33,14 +70,17 @@ ModelImporter:
     3300008: Eye_Left
     3300010: Eye_Righ
     3300012: Eye_Right
+    3300014: Mouth
     4300000: Clyde
     4300002: Icosphere_001
     4300004: Icosphere
     4300006: Eye_Righ
     4300008: Eye_Left
     4300010: Eye_Right
+    4300012: Mouth
     7400000: Default Take
     9500000: //RootNode
+    13700000: Clyde
   materials:
     importMaterials: 1
     materialName: 0
