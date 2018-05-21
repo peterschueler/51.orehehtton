@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour {
 		if (destPrefs != "") {
 			PlayerPrefs.SetString("destination", "");
 			player.transform.position = GameObject.Find(destPrefs).transform.position;
+			player.transform.rotation = GameObject.Find(destPrefs).transform.rotation;
 		}
 	}
 	

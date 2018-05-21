@@ -5,7 +5,7 @@ using UnityEngine;
 public class Trigger : MonoBehaviour {
 	public GameObject caption;
 	public ParticleSystem effect;
-	public GameObject light;
+	public GameObject moodLight;
 	public float delay;
 
 	// Use this for initialization
@@ -20,7 +20,7 @@ public class Trigger : MonoBehaviour {
 	
 	IEnumerator ExecuteAfterTime(float time) {
 		yield return new WaitForSeconds(time);
-		light.SetActive(true);
+		moodLight.SetActive(true);
 		effect.Play();
 		caption.transform.position = new Vector3(caption.transform.position.x, caption.transform.position.y, caption.transform.position.z - 0.2f);
 	}
