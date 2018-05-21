@@ -13,10 +13,18 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+	}
+	
+	void LateUpdate() {
 		var x = Input.GetAxis("Horizontal") * Time.deltaTime * x_movement;
 		var z = Input.GetAxis("Vertical") * Time.deltaTime * z_movement;
 		
 		transform.Rotate(0,x,0);
-		transform.Translate(0,0,z);
+		transform.Translate(0,0,z);	
+	}
+	
+	void OnCollisionEnter(Collision col) {
+		gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
 	}
 }
