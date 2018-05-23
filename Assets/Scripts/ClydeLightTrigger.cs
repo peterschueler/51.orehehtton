@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class ClydeTrigger : MonoBehaviour {
-	public GameObject clyde;
+
+public class ClydeLightTrigger : MonoBehaviour {
 	public GameObject[] lights;
 
 	// Use this for initialization
@@ -16,7 +16,6 @@ public class ClydeTrigger : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider col) {
-		clyde.SetActive(true);
 		foreach (var l in lights) {
 			l.SetActive(true);
 		}

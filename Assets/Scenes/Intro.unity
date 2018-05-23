@@ -3602,6 +3602,93 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb4718179ae314543b45ca4b20afb224, type: 3}
   m_IsPrefabParent: 0
+--- !u!1001 &397404190
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4671725059687304, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671725059687304, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671725059687304, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 18.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671725059687304, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671725059687304, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671725059687304, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671725059687304, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671725059687304, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114304000348483590, guid: 75cbd0c60653a47c9803cca453839bf6,
+        type: 2}
+      propertyPath: caption
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114304000348483590, guid: 75cbd0c60653a47c9803cca453839bf6,
+        type: 2}
+      propertyPath: effect
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114304000348483590, guid: 75cbd0c60653a47c9803cca453839bf6,
+        type: 2}
+      propertyPath: moodLight
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114304000348483590, guid: 75cbd0c60653a47c9803cca453839bf6,
+        type: 2}
+      propertyPath: delay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 65947171840169060, guid: 75cbd0c60653a47c9803cca453839bf6,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 3.6950645
+      objectReference: {fileID: 0}
+    - target: {fileID: 65947171840169060, guid: 75cbd0c60653a47c9803cca453839bf6,
+        type: 2}
+      propertyPath: m_Center.z
+      value: -1.3475323
+      objectReference: {fileID: 0}
+    - target: {fileID: 65947171840169060, guid: 75cbd0c60653a47c9803cca453839bf6,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2.6474404
+      objectReference: {fileID: 0}
+    - target: {fileID: 65947171840169060, guid: 75cbd0c60653a47c9803cca453839bf6,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 0.4244883
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372841701956768, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
+      propertyPath: m_Name
+      value: Cylde Trigger
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114304000348483590, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &514205915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4000,6 +4087,23 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f8a4f9322c054a69b01fefd81998cc0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &778940791 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1372841701956768, guid: 75cbd0c60653a47c9803cca453839bf6,
+    type: 2}
+  m_PrefabInternal: {fileID: 397404190}
+--- !u!114 &778940792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 778940791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ad0895dbb0ce4f7da28cbc4ecd3c283, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clyde: {fileID: 965726114}
 --- !u!1 &804843198
 GameObject:
   m_ObjectHideFlags: 0
@@ -4063,7 +4167,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 49.423004, y: -60.690002, z: -53.530003}
 --- !u!1 &838858543
 GameObject:
@@ -4714,7 +4818,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ded4d02d0f942d8a6060eb9b089819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clyde: {fileID: 965726114}
   lights:
   - {fileID: 1384578108}
   - {fileID: 804843198}
@@ -4950,7 +5053,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1001 &1391509151
 Prefab:
@@ -5254,7 +5357,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4671725059687304, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 114304000348483590, guid: 75cbd0c60653a47c9803cca453839bf6,
         type: 2}
@@ -5298,7 +5401,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1372841701956768, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
       propertyPath: m_Name
-      value: Cylde Trigger
+      value: Cylde Light Trigger
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114304000348483590, guid: 75cbd0c60653a47c9803cca453839bf6, type: 2}
@@ -5992,7 +6095,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4695765107238732, guid: e83bbaa50fd7142609cb2f2a68b7bed6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.49
+      value: -1.02
       objectReference: {fileID: 0}
     - target: {fileID: 4695765107238732, guid: e83bbaa50fd7142609cb2f2a68b7bed6, type: 2}
       propertyPath: m_LocalPosition.z
