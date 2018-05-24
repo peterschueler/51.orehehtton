@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour {
 		} else {
 			currentTime = 1;
 		 }
-		InvokeRepeating("UpdateEndTimer", 0.1f, 2.0f);
+		InvokeRepeating("UpdateEndTimer", 0.1f, 255.0f);
 	}
 	
 	// Update is called once per frame
