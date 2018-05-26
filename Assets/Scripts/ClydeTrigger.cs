@@ -22,6 +22,6 @@ public class ClydeTrigger : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider col) {
-
+		ActivateClyde();
 	}
 }
