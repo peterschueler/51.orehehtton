@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Trigger : MonoBehaviour {
 	public GameObject caption;
-	public ParticleSystem effect;
+	public ParticleSystem[] effects;
 	public GameObject moodLight;
 	public float delay;
 	public float sceneDelay;
@@ -24,7 +24,9 @@ public class Trigger : MonoBehaviour {
 	IEnumerator ExecuteAfterTime(float time) {
 		yield return new WaitForSeconds(time);
 		moodLight.SetActive(true);
-		effect.Play();
+		foreach (var e in effects) {
+			e.Play();
+		}
 		caption.transform.position = new Vector3(caption.transform.position.x, caption.transform.position.y, caption.transform.position.z - 0.2f);
 	}
 	

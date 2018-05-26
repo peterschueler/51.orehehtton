@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ClydeTrigger : MonoBehaviour {
 	public GameObject clyde;
+	public AudioSource clydeSound;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +16,12 @@ public class ClydeTrigger : MonoBehaviour {
 		
 	}
 	
-	void OnTriggerEnter(Collider col) {
+	void ActivateClyde() {
 		clyde.SetActive(true);
+		clydeSound.Play();
+	}
+	
+	void OnTriggerEnter(Collider col) {
+
 	}
 }

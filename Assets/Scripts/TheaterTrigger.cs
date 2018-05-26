@@ -17,7 +17,6 @@ public class TheaterTrigger : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider col) {
-		print("triggered");
 		foreach(var g in lights) {
 			g.SetActive(true);
 		}
