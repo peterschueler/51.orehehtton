@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour {
 	public GameObject player;
 	
+	private bool gameOver;
 	private int currentTime;
 
 	// Use this for initialization
@@ -20,19 +21,28 @@ public class GameController : MonoBehaviour {
 			currentTime = t;
 		} else {
 			currentTime = 1;
+			gameOver = false;
 		 }
-		InvokeRepeating("UpdateEndTimer", 0.1f, 25.0f);
+		InvokeRepeating("UpdateEndTimer", 0.1f, 25.83333f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (gameOver) {
+			print("Huzzah!");
+		}
 	}
 	
 	void UpdateEndTimer() {
-		var timer = GameObject.Find("EndTimer");
 		currentTime++;
-		timer.GetComponent<TextMesh>().text = currentTime.ToString();
+		if (currentTime == 12) {
+			gameOver = true;
+			currentTime = 0;
+			return;
+		}
+		foreach(var timer in GameObject.FindGameObjectsWithTag("EndTimer")) {
+			timer.GetComponent<TextMesh>().text = currentTime.ToString();
+		}
 		PlayerPrefs.SetInt("endTimer", currentTime);
 	}
 }
