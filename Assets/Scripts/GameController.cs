@@ -18,7 +18,6 @@ public class GameController : MonoBehaviour {
 		var t = PlayerPrefs.GetInt("endTimer");
 		if (t != 0) {
 			currentTime = t;
-			print("helloooo");
 		} else {
 			currentTime = 1;
 		 }
