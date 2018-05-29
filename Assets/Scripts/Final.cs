@@ -6,12 +6,14 @@ public class Final : MonoBehaviour {
 	public GameObject first;
 	public GameObject second;
 	public GameObject third;
+	public GameObject fourth;
 
 	// Use this for initialization
 	void Start () {
 		StartCoroutine(DisplayText(2, first));
 		StartCoroutine(DisplayText(4, second));
 		StartCoroutine(DisplayText(6, third));
+		StartCoroutine(DisplayText(8, fourth));
 	}
 	
 	// Update is called once per frame

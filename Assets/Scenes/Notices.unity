@@ -124,7 +124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &46988504
 RectTransform:
   m_ObjectHideFlags: 0
@@ -623,7 +623,7 @@ MonoBehaviour:
     m_LineSpacing: 1.2
   m_Text: 'A video game in the 1251 series
 
-    Created by @peterschueler'
+    Created by Peter Schueler'
 --- !u!222 &1939268110
 CanvasRenderer:
   m_ObjectHideFlags: 0

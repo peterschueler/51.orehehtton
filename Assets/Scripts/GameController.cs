@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour {
 	public GameObject player;
-	
-	private bool gameOver;
-	private int currentTime;
+	private int currentTime = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -16,33 +14,38 @@ public class GameController : MonoBehaviour {
 			player.transform.position = GameObject.Find(destPrefs).transform.position;
 			player.transform.rotation = GameObject.Find(destPrefs).transform.rotation;
 		}
-		var t = PlayerPrefs.GetInt("endTimer");
-		if (t != 0) {
-			currentTime = t;
+	}
+	
+	private void Awake() {
+		if (PlayerPrefs.HasKey("endTimer")) {
+			var t = PlayerPrefs.GetInt("endTimer");
+			if (t != 0) {
+				currentTime = t;
+			}
 		} else {
-			currentTime = 1;
-			gameOver = false;
-		 }
+			PlayerPrefs.SetInt("endTimer", 1);
+			PlayerPrefs.Save();
+		}
 		InvokeRepeating("UpdateEndTimer", 0.1f, 25.83333f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (gameOver) {
-			print("Huzzah!");
-		}
 	}
 	
 	void UpdateEndTimer() {
-		currentTime++;
 		if (currentTime == 12) {
-			gameOver = true;
-			currentTime = 0;
 			return;
 		}
+		currentTime++;
 		foreach(var timer in GameObject.FindGameObjectsWithTag("EndTimer")) {
 			timer.GetComponent<TextMesh>().text = currentTime.ToString();
 		}
 		PlayerPrefs.SetInt("endTimer", currentTime);
+		PlayerPrefs.Save();
+	}
+	
+	void OnApplicationQuit() {
+		PlayerPrefs.SetInt("endTimer", 0);
 	}
 }
